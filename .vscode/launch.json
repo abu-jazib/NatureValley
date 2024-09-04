@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index-3.html",
+            "file": "c:\\Users\\dell\\Desktop\\gadden-garden-landscaping-html-template-2023-11-27-05-01-13-utc\\Gadden\\HTML Template\\index-3.html"
+        }
+    ]
+}
