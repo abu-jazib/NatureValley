@@ -4297,9 +4297,8 @@ ul.slick-dots li {
   border-radius: 20px; }
 
 .product-gallery-area .product-thumb-slider {
-  margin-left: -15px;
-  margin-right: -15px;
-  cursor: pointer; }
+  margin-left: 15px;
+  margin-right: 15px;}
   .product-gallery-area .product-thumb-slider .product-img {
     margin-left: 15px;
     margin-right: 15px; }
@@ -6337,3 +6336,11 @@ ul.slick-dots li {
     border-top: 1px solid rgba(255, 255, 255, 0.1); }
     .sidebar-panel-wrapper .sidebar-wrapper .sidebar-gallery .single-gallery-item {
       margin-bottom: 30px; }
+
+
+      .products-wrapper {  
+        max-width: 700px; /* Adjust as necessary */  
+        /* Center the wrapper */  
+        /* Optional: add padding */  
+    }  
+   
