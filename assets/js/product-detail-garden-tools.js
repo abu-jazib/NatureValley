@@ -1,11 +1,19 @@
 const products = [  
     {  
-        name: "Garden Tools",  
-        image: "assets/images/products/pr-1.jpg",  
-        price: 256.00,  
+        name: "Chain Saw",  
+        image: "assets/images/products/garden-tools/pr-1.jpg",  
+        price: 5000.00,  
         category: "indoor",  
-        description1: "A beautiful watering can arrangement with narcissus flowers.",  
-        description2: "Perfect for indoor decoration and plant care."  
+        description1: "",  
+        description2: ""  
+    },
+    {  
+        name: "Heavy Duty Cutter",  
+        image: "assets/images/products/garden-tools/pr-2.jpg",  
+        price: 1500.00,  
+        category: "indoor",  
+        description1: "",  
+        description2: ""  
     },  
 
 ];  
