@@ -1,10 +1,8 @@
-
 // Font Family
 
-$body-font: 'Roboto', sans-serif;
+$body-font: "Roboto", sans-serif;
 
-$heading-font: 'Montserrat', sans-serif;
-
+$heading-font: "Montserrat", sans-serif;
 
 // Font Size
 
@@ -19,26 +17,26 @@ $h6-font: 18px;
 
 $black-color: #000000;
 
-$text-color: #2F2F2F;
+$text-color: #2f2f2f;
 
 $primary-color: #1b5b3b;
 
 $secondary-color: #26d966;
 
-$golden-color: #F1D2A9;
+$golden-color: #f1d2a9;
 
-$gray-color:#FCFAF7;
+$gray-color: #fcfaf7;
 
 $white: #fff;
 
 // Responsive Variables
 
-$xl: 'only screen and (min-width: 1200px)';
-$lp: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
-$lm : '(max-width: 1199px)';
-$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
-$xm:'(max-width: 991px)';
-$md:'only screen and (min-width: 768px) and (max-width: 991px)';
-$xs:'(max-width: 767px)';
-$xss:'(max-width: 575px)';
-$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xl: "only screen and (min-width: 1200px)";
+$lp: "only screen and (min-width: 1200px) and (max-width: 1600px)";
+$lm: "(max-width: 1199px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$xm: "(max-width: 991px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+$xs: "(max-width: 767px)";
+$xss: "(max-width: 575px)";
+$sm: "only screen and (min-width: 576px) and (max-width: 767px)";
