@@ -18,4 +18,13 @@ const products = [
       "Anthurium is a genus of tropical plants known for their distinctive, glossy, heart-shaped leaves and unique, colorful spathe-and-spadix flowers. Commonly called “laceleaf” or “flamingo flower,” Anthuriums are prized as indoor ornamental plants. They thrive in warm, humid conditions and are valued for their striking appearance and long-lasting blooms.",
     description2: "",
   },
+  {
+    name: "nvhnbINGO",
+    image: "assets/images/products/plants/pr-2.jpg",
+    price: 6500.0,
+    category: "outdoor",
+    description1:
+      "Anthurium is a genus of tropical plants known for their distinctive, glossy, heart-shaped leaves and unique, colorful spathe-and-spadix flowers. Commonly called “laceleaf” or “flamingo flower,” Anthuriums are prized as indoor ornamental plants. They thrive in warm, humid conditions and are valued for their striking appearance and long-lasting blooms.",
+    description2: "",
+  },
 ];

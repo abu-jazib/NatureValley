@@ -1,0 +1,94 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Blog Details</title>  
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <script src="path/to/blogs.js"></script> <!-- Ensure this path is correct -->  
+</head>  
+<body>  
+    <div class="blog-post wow fadeInUp" id="blog-container">  
+        <div class="post-meta" id="post-meta">  
+            <span class="author" id="author-info"></span>  
+            <span class="date" id="post-date"></span>  
+        </div>  
+        <div class="entry-content">  
+            <h3 class="title" id="post-title"></h3>  
+            <p id="description1"></p>  
+            <div class="block-image"><img id="image1" alt="Post Image"></div>  
+            <p id="description2"></p>  
+            <div class="block-image"><img id="image2" alt="Post Image"></div>  
+            <p id="description3"></p>  
+            <p id="description4"></p>  
+            <p id="description5"></p>  
+        </div>  
+    </div>  
+  
+    <script>  
+        // Sample blogs array (you can also import this from blogs.js)  
+        const blogs = [  
+            {  
+                title: "ALOE VERA",  
+                date: "27-09-2024",  
+                author: "John Doe",  
+                author_designation: "Botanist",  
+                author_description: "An expert in plant studies.",  
+                author_image: "assets/images/blog/author-thumb-4.jpg",  
+                image1: "assets/images/products/plants/pr-1.jpg",  
+                image2: "assets/images/products/plants/pr-2.jpg",  
+                description1: "Aloe vera is a succulent plant species of the genus Aloe. It is widely distributed and is considered an invasive species in many world regions.",  
+                description2: "An evergreen perennial, it originates from the Arabian Peninsula, but grows wild in tropical, semi-tropical, and arid climates around the world.",  
+                description3: "It is cultivated for commercial products, mainly as a topical treatment used over centuries.",  
+                description4: "The species is attractive for decorative purposes and succeeds indoors as a potted plant.",  
+                description5: "It is used in many consumer products, including beverages, skin lotion, cosmetics, ointments, or in the form of gel for minor burns and sunburns."  
+            }  
+            // Add more blog objects if needed  
+        ];  
+  
+        // Function to get query parameters from the URL  
+        function getQueryParams() {  
+            const params = {};  
+            const queryString = window.location.search.substring(1);  
+            const queryArray = queryString.split("&");  
+              
+            for (let i = 0; i < queryArray.length; i++) {  
+                const pair = queryArray[i].split("=");  
+                params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || "");  
+            }  
+            return params;  
+        }  
+  
+        // Fetch blog details based on title from URL  
+        function fetchBlogDetails() {  
+            const params = getQueryParams();  
+            const blogTitle = params.title; // Get the title from the URL  
+  
+            console.log("Fetching blog with title:", blogTitle); // Debugging output  
+            console.log("Available blogs:", blogs.map(b => b.title)); // Log available titles  
+  
+            // Find the blog in the blogs array  
+            const blog = blogs.find(b => b.title === blogTitle); // Match the title directly  
+  
+            // Display blog details if found  
+            if (blog) {  
+                document.getElementById('post-title').innerText = blog.title;  
+                document.getElementById('post-date').innerHTML = `<a href="#">${blog.date}</a>`;  
+                document.getElementById('author-info').innerHTML = `<img src="${blog.author_image}" alt="author"><a href="blog-details.html"><span>By</span> ${blog.author || 'Unknown'}</a>`;  
+                document.getElementById('description1').innerText = blog.description1;  
+                document.getElementById('image1').src = blog.image1;  
+                document.getElementById('description2').innerText = blog.description2;  
+                document.getElementById('image2').src = blog.image2 || ''; // Handle case if no image  
+                document.getElementById('description3').innerText = blog.description3 || '';  
+                document.getElementById('description4').innerText = blog.description4 || '';  
+                document.getElementById('description5').innerText = blog.description5 || '';  
+            } else {  
+                document.getElementById('blog-container').innerHTML = '<h3>Blog not found.</h3>';  
+            }  
+        }  
+  
+        // Call the function to fetch blog details when the page loads  
+        document.addEventListener('DOMContentLoaded', fetchBlogDetails);  
+    </script>  
+</body>  
+</html>  
